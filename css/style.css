@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/Merriweather.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GolosText';
+    src: url('/fonts/GolosText.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1222px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    z-index: 99;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', 'Times New Roman', serif;
+    color: #313131;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 span {
+    display: block;
+}
+
+.header__inner {
+    padding-top: 26px;
+    position: absolute;
+    background-image: url('/img/back.png');
+
+}
+
+.banner {
+    padding: 124px 0 132px;
+    background-image: url('/img/back.png');
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    background: url('/img/back-img.png') center / cover no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner-content {
+    max-width: 542px;
+    position: relative;
+    z-index: 99;
+}
+
+.banner-content__title--center {
+    text-align: center;
+}
+
+.banner-content__title--right {
+    text-align: right;
+}
+
+.banner-content__text,
+.banner-content__btns a {
+    font-family: 'GolosText', 'Times New Roman', serif;
+}
+
+.banner-content__text {
+    margin: 24px 0 40px;
+    text-align: center;
+}
+
+.banner-content__text span {
+    display: block;
+}
+
+.banner-content__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.banner-content__btns a {
+    border-radius: 66px;
+    padding: 20px 49px;
+    text-align: center;
+    line-height: 130%;
+    transition: all 0.3s ease;
+}
+
+.banner-content__btns a:first-child {
+    background-color: #1F1F1F;
+    color: #ffffff;
+}
+
+.banner-content__btns a:first-child:hover {
+    background-color: #FBCE51;
+    color: #1F1F1F;
+}
+
+.banner-content__btns a:last-child {
+    border: #1F1F1F 2px solid;
+    color: #1F1F1F;
+}
+
+.banner-content__btns a:last-child:hover {
+    background-color: #1F1F1F;
+    color: #ffffff;
+}
